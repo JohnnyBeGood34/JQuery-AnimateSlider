@@ -38,7 +38,7 @@
              */
             function changeSlides(target) {
 
-                if (target == 'next') {
+                if (target === 'next') {
 
                     newSlide = activeSlide + 1;
 
@@ -47,7 +47,7 @@
                         newSlide = 0;
                     }
 
-                } else if (target == 'prev') {
+                } else if (target === 'prev') {
                     newSlide = activeSlide - 1;
                     if (newSlide < 0) {
                         newSlide = totalSlides - 1;
