@@ -1,7 +1,7 @@
 AnimateSlider
 =============
 
-A Simple JQuery slider using Animate.css
+A Simple JQuery slider plug-in using Animate.css
 
 AnimateSlider allows you to make a slider with animation of each elements contained in it. It uses animate.css for css 3 transitions.
 
