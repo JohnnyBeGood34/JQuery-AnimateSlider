@@ -20,6 +20,7 @@ Declare a slider container for your slides and put them inside. Each slide needs
 
 ```html
 <div id="home-slider">
+
   <div class="slide">
     <div data-effect-in="fadeIn" data-effect-out="fadeOut">
       <img src="path/to/img"/>
@@ -30,6 +31,18 @@ Declare a slider container for your slides and put them inside. Each slide needs
       <p>Lorem ipsum dolor sit amet</p>
     </div>
   </div>
+  
+   <div class="slide">
+    <div data-effect-in="bounceInLeft" data-effect-out="bounceOutLeft">
+      <img src="path/to/img"/>
+    </div>
+    <div data-effect-in="rotateInDownLeft" data-effect-out="rotateOutDownLeft">
+      <h1>My second presentation</h1>
+      <h2>Consectetur adipiscing elit</h2>
+      <p>Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+  
 </div>
 ```
 
