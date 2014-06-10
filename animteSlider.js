@@ -1,7 +1,7 @@
 /*
  Plugin: jQuery AnimateSlider
  Version 1.0.0
- Author: Jonathan Affre
+ Author: John John
  */
 (function($)
 {
