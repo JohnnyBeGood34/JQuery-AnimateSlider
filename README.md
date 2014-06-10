@@ -1,4 +1,4 @@
-AnimateSlider
+AnimateSlider [![Code Climate](https://codeclimate.com/github/JohnnyBeGood34/JQuery-AnimateSlider.png)](https://codeclimate.com/github/JohnnyBeGood34/JQuery-AnimateSlider)
 =============
 
 A Simple JQuery slider plug-in using Animate.css
