@@ -57,7 +57,7 @@ Where the parameter is slide duration.
 REMARK
 =============
 
-If you have a container in you're "home-slider" div , you must fill it into Jquery selector like
+If you have a container in your "home-slider" div , you must fill it into Jquery selector like
 
 ```javascript
   $("#home-slider .myContainer").animateSlider(4000);
