@@ -1,5 +1,7 @@
 /*
- * Simple slider using Animate.css
+ Plugin: jQuery AnimateSlider
+ Version 1.0.0
+ Author: Jonathan Affre
  */
 (function($)
 {
