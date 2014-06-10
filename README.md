@@ -65,4 +65,4 @@ If you have a container in your "home-slider" div , you must fill it into Jquery
 
 DEPENDENCIES
 =============
-https://github.com/daneden/animate.css/tree/master/source
+https://github.com/daneden/animate.css
