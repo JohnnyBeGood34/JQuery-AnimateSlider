@@ -1,7 +1,7 @@
 AnimateSlider
 =============
 
-A Simple slide using Animate.css
+A Simple JQuery slider using Animate.css
 
 AnimateSlider allows you to make a slider with animation of each elements contained in it. It uses animate.css for css 3 transitions.
 
@@ -17,8 +17,31 @@ Declare a slider container for your slides and put them inside. Each slide needs
       <img src="path/to/img"/>
     </div>
     <div data-effect-in="bounceInUp" data-effect-out="bounceOutDown">
-      <img src="path/to/img"/>
+      <h1>My presentation</h1>
+      <h2>Consectetur adipiscing elit</h2>
+      <p>Lorem ipsum dolor sit amet</p>
     </div>
   </div>
 </div>
 ```
+
+```css
+#home-slider{
+    position: relative;
+    overflow: hidden;
+} 
+
+#home-slider .slide{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+```
+
+Finally use Jquery to bind the slider
+
+```javascript
+  $("#home-slider").animateSlider(4000);
+```
+
+Where the parameter is slide duration.
