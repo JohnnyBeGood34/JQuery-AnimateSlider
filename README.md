@@ -10,7 +10,7 @@ HOW TO USE
 
 Declare a slider container for your slides and put them inside. Each slide needs to have a class named "slide".Then add elements inside and add data-effect-in="animteCssEffect" for entry effect and data-effect-out="animateCssEffect" for release effect.
 
-```
+```html
 <div id="home-slider">
   <div class="slide">
     <div data-effect-in="fadeIn" data-effect-out="fadeOut">
