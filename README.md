@@ -54,6 +54,15 @@ Finally use Jquery to bind the slider
 
 Where the parameter is slide duration.
 
+To add next and previous buttons to the slider proceed as follows :
+
+```html
+<button data-target="prev"></button>
+<button data-target="next"></button>
+```
+
+They must have a data-target="target" where target can be "next" or "prev".
+
 REMARK
 =============
 
