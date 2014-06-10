@@ -62,3 +62,7 @@ If you have a container in you're "home-slider" div , you must fill it into Jque
 ```javascript
   $("#home-slider .myContainer").animateSlider(4000);
 ```
+
+DEPENDENCIES
+=============
+https://github.com/daneden/animate.css/tree/master/source
