@@ -3,11 +3,12 @@ AnimateSlider [![Code Climate](https://codeclimate.com/github/JohnnyBeGood34/JQu
 
 A Simple JQuery slider plug-in using Animate.css
 
-AnimateSlider allows you to make a slider with animation of each elements contained in it. It uses animate.css for css 3 transitions.
+AnimateSlider is a sliding container which allows you to animate any of its child elements. It uses animate.css for css 3 transitions.
 
 INSTALLATION
 =============
-Include script after Jquery library and don't forget to include animate.css before.
+Include the script after jQuery library . 
+Don't forget to call the animate.css stylesheet before loading this JS plugin.
 
 ```html
 <script src="path/to/animateSlider.js">
@@ -16,7 +17,9 @@ Include script after Jquery library and don't forget to include animate.css befo
 USAGE
 =============
 
-Declare a slider container for your slides and put them inside. Each slide needs to have a class named "slide".Then add elements inside and add data-effect-in="animteCssEffect" for entry effect and data-effect-out="animateCssEffect" for release effect.
+1. Declare a slider container and put some slidable elements in it. Each slidable must have a class named "slide".
+2. To add the entry animation to an element, simply add the attribute data-effect-in="animteCssEffect"
+3. To add the release animation to an element, add data-effect-out="animateCssEffect"
 
 ```html
 <div id="home-slider">
