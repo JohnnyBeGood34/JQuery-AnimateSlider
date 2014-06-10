@@ -68,10 +68,27 @@
 
                 var childsOfSlide = $slides.eq(indexOfActiveSlide).children();
                 $(childsOfSlide).each(function(index, element) {
-                    $(element).removeClass($(element).data("effect-in") + " animated");
-                    $(element).addClass($(element).data("effect-out") + " animated");
+                    if (typeof $(element).data("effect-in") !== "undefined" && typeof $(element).data("effect-out") !== "undefined")
+                    {
+                        $(element).removeClass($(element).data("effect-in") + " animated");
+                        $(element).addClass($(element).data("effect-out") + " animated");
+                    }
+                    else
+                    {
+                        $(element).children().each(function(index, child) {
+                            if (typeof $(child).data("effect-in") !== "undefined" && typeof $(child).data("effect-out") !== "undefined")
+                            {
+                                $(child).removeClass($(child).data("effect-in") + " animated");
+                                $(child).addClass($(child).data("effect-out") + " animated");
+                            }
+                        });
+                    }
                 });
 
+
+                /*
+                 * Le temps que les images repartent (700 ms) on change de slide
+                 */
                 $slides.eq(indexOfActiveSlide).delay(700).queue(function(next) {
                     $(this).css('opacity', 0);
                     activeSlide = indexOfnewSlide;
@@ -102,20 +119,32 @@
                 $element.children().each(function(index, element) {
                     
                     $(element).delay(200).queue(function(next) {
-                        $(this).removeClass($(element).data("effect-out") + " animated");
-                        if (typeof $element !== "undefined")
+                        if (typeof $(this).data("effect-out") !== "undefined")
                         {
-                            $element.css({
-                                'z-index': 2,
-                                'opacity': 1
+                            $(this).removeClass($(this).data("effect-out") + " animated");
+                        }
+                        else
+                        {
+                            $(this).children().each(function(index, child) {
+                                $(child).removeClass($(child).data("effect-out") + " animated");
                             });
                         }
-                        $(this).addClass($(element).data("effect-in") + " animated");
-                        next();
-                    });
-                    $(element).delay(200).queue(function(next) {
-                        $(this).removeClass($(element).data("effect-out") + " animated");
-                        $(this).addClass($(element).data("effect-in") + " animated");
+
+                        $element.css({
+                            'z-index': 2,
+                            'opacity': 1
+                        });
+
+                        if (typeof $(this).data("effect-in") !== "undefined")
+                        {
+                            $(this).addClass($(this).data("effect-in") + " animated");
+                        }
+                        else
+                        {
+                            $(this).children().each(function(i, child) {
+                                $(child).addClass($(child).data("effect-in") + " animated");
+                            });
+                        }
                         next();
                     });
                 });
