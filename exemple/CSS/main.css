@@ -1,7 +1,29 @@
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+h1,h2,h3,h4,h5,h6 {
+
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 0.9
+}
+h1 {font-size: 60px}
+h2 {font-size: 40px}
+.btn-main {
+
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 0.9
+
+}
 /****** HOME-SLIDER ******/
 #home-slider {
-    padding-top: 120px; 
+    padding-top: 50px; 
+    padding-bottom:10px;
     background-color: #36383e;   
 }
 #home-slider .slide{
@@ -45,6 +67,12 @@
     right:0;
 }
 
+.square{
+    width:25%;
+    height:224px;
+    float:left;
+}
+
 #home-slider .slide .image-right img.bottom{
     float:right;
     position:absolute;
@@ -57,6 +85,13 @@
     position:absolute;
     top:0;
     right:0;
+}
+
+#home-slider .slide .image-right img.right{
+    float:right;
+    position:absolute;
+    top:0;
+    right:25%;
 }
 
 #home-slider .slide .caption .text {
